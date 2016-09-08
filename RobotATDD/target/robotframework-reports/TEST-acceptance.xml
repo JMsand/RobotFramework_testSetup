@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="0" skip="0" tests="2" name="Acceptance" errors="0">
+<testcase classname="Acceptance.Calculate.calculatePage" name="The calculate page has a correct header" time="6">
+</testcase>
+<testcase classname="Acceptance.Calculate.calculatePage" name="You can calculate a value with the add operator" time="6">
+</testcase>
+</testsuite>

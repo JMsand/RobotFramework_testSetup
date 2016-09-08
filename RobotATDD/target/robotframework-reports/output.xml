@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0 (Jython 2.7.0 on java1.8.0_101)" generated="20160908 16:12:08.267">
+<suite source="C:\code\projecten\RobotATDD\src\test\robotframework\acceptance" name="Acceptance" id="s1">
+<suite source="C:\code\projecten\RobotATDD\src\test\robotframework\acceptance\calculate" name="Calculate" id="s1-s1">
+<suite source="C:\code\projecten\RobotATDD\src\test\robotframework\acceptance\calculate\calculatePage.robot" name="calculatePage" id="s1-s1-s1">
+<test name="The calculate page has a correct header" id="s1-s1-s1-t1">
+<kw type="setup" library="Selenium2Library" name="Open Browser">
+<doc>Opens a new browser instance to given URL.&lt;br&gt;</doc>
+<arguments>
+<arg>http://localhost:8080/calculate</arg>
+<arg>ff</arg>
+</arguments>
+<msg level="INFO" timestamp="20160908 16:12:09.363">browserName: ff</msg>
+<msg level="INFO" timestamp="20160908 16:12:09.367">Opening browser 'ff' to base url 'http://localhost:8080/calculate'</msg>
+<status endtime="20160908 16:12:14.521" starttime="20160908 16:12:09.352" status="PASS"></status>
+</kw>
+<kw name="Given I am on the calculate page">
+<kw library="Selenium2Library" name="Location Should Contain">
+<doc>Verify the current page URL contains &lt;b&gt;url&lt;/b&gt;.&lt;br&gt;&lt;br&gt;&lt;b&gt;Parameters:&lt;/b&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b&gt;url&lt;/b&gt;&amp;nbsp;The URL to verify.&lt;br&gt;&lt;br&gt;&lt;b&gt;See Also:&lt;/b&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Location Should Be`&lt;br&gt;</doc>
+<arguments>
+<arg>/calculate</arg>
+</arguments>
+<msg level="INFO" timestamp="20160908 16:12:14.550">Current location is '/calculate'.</msg>
+<status endtime="20160908 16:12:14.551" starttime="20160908 16:12:14.526" status="PASS"></status>
+</kw>
+<status endtime="20160908 16:12:14.553" starttime="20160908 16:12:14.524" status="PASS"></status>
+</kw>
+<kw name="Then the title I see should be &quot;Calculate a value&quot;">
+<kw library="Selenium2Library" name="Title Should Be">
+<doc>Verify the current page title is exactly &lt;b&gt;title&lt;/b&gt;.&lt;br&gt;&lt;br&gt;&lt;b&gt;Parameters:&lt;/b&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b&gt;title&lt;/b&gt;&amp;nbsp;The title to verify.&lt;br&gt;&lt;br&gt;&lt;b&gt;See Also:&lt;/b&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Title Should Not Be`&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Title Should Contain`&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Title Should Not Contain`&lt;br&gt;</doc>
+<arguments>
+<arg>${title}</arg>
+</arguments>
+<msg level="INFO" timestamp="20160908 16:12:14.577">Page title is 'Calculate a value'.</msg>
+<status endtime="20160908 16:12:14.578" starttime="20160908 16:12:14.556" status="PASS"></status>
+</kw>
+<status endtime="20160908 16:12:14.579" starttime="20160908 16:12:14.554" status="PASS"></status>
+</kw>
+<kw name="And I should see a header with the text &quot;Calculate a value using operators&quot;">
+<kw library="Selenium2Library" name="Element Should Contain">
+<doc>Verify the element identified by &lt;b&gt;locator&lt;/b&gt; contains &lt;b&gt;text&lt;/b&gt;.&lt;br&gt;</doc>
+<arguments>
+<arg>calculateHeader</arg>
+<arg>${header}</arg>
+</arguments>
+<msg level="INFO" timestamp="20160908 16:12:14.673">Element Should Contain: Calculate a value using operators =&gt; OK</msg>
+<status endtime="20160908 16:12:14.674" starttime="20160908 16:12:14.582" status="PASS"></status>
+</kw>
+<status endtime="20160908 16:12:14.676" starttime="20160908 16:12:14.580" status="PASS"></status>
+</kw>
+<kw type="teardown" library="Selenium2Library" name="Close Browser">
+<doc>Closes the current browser instance.&lt;br&gt;&lt;br&gt;&lt;b&gt;See Also:&lt;/b&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Close All Browsers`&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Open Browser`&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Switch Browser`&lt;br&gt;</doc>
+<status endtime="20160908 16:12:15.173" starttime="20160908 16:12:14.677" status="PASS"></status>
+</kw>
+<tags>
+<tag>calculate</tag>
+<tag>header</tag>
+<tag>title</tag>
+</tags>
+<status critical="yes" endtime="20160908 16:12:15.174" starttime="20160908 16:12:09.346" status="PASS"></status>
+</test>
+<test name="You can calculate a value with the add operator" id="s1-s1-s1-t2">
+<kw type="setup" library="Selenium2Library" name="Open Browser">
+<doc>Opens a new browser instance to given URL.&lt;br&gt;</doc>
+<arguments>
+<arg>http://localhost:8080/calculate</arg>
+<arg>ff</arg>
+</arguments>
+<msg level="INFO" timestamp="20160908 16:12:15.184">browserName: ff</msg>
+<msg level="INFO" timestamp="20160908 16:12:15.186">Opening browser 'ff' to base url 'http://localhost:8080/calculate'</msg>
+<status endtime="20160908 16:12:19.779" starttime="20160908 16:12:15.180" status="PASS"></status>
+</kw>
+<kw name="Given I am on the calculate page">
+<kw library="Selenium2Library" name="Location Should Contain">
+<doc>Verify the current page URL contains &lt;b&gt;url&lt;/b&gt;.&lt;br&gt;&lt;br&gt;&lt;b&gt;Parameters:&lt;/b&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;b&gt;url&lt;/b&gt;&amp;nbsp;The URL to verify.&lt;br&gt;&lt;br&gt;&lt;b&gt;See Also:&lt;/b&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Location Should Be`&lt;br&gt;</doc>
+<arguments>
+<arg>/calculate</arg>
+</arguments>
+<msg level="INFO" timestamp="20160908 16:12:19.814">Current location is '/calculate'.</msg>
+<status endtime="20160908 16:12:19.816" starttime="20160908 16:12:19.784" status="PASS"></status>
+</kw>
+<status endtime="20160908 16:12:19.817" starttime="20160908 16:12:19.781" status="PASS"></status>
+</kw>
+<kw name="When I add 4">
+<kw library="Selenium2Library" name="Input Text">
+<doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
+<arguments>
+<arg>input</arg>
+<arg>${value}</arg>
+</arguments>
+<msg level="INFO" timestamp="20160908 16:12:19.828">Typing text '4' into text field 'input'</msg>
+<status endtime="20160908 16:12:19.971" starttime="20160908 16:12:19.821" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Click Button">
+<doc>Click on the button identified by &lt;b&gt;locator&lt;/b&gt;.&lt;br&gt;</doc>
+<arguments>
+<arg>addButton</arg>
+</arguments>
+<msg level="INFO" timestamp="20160908 16:12:19.975">Clicking button 'addButton'.</msg>
+<status endtime="20160908 16:12:20.119" starttime="20160908 16:12:19.972" status="PASS"></status>
+</kw>
+<kw library="FancyLib" name="Is This Fancy">
+<arguments>
+<arg>${value}</arg>
+</arguments>
+<msg level="INFO" timestamp="20160908 16:12:20.127">Sep 08, 2016 4:12:20 PM FancyLib isThisFancy
+WARNING: Warning this is not so fancy</msg>
+<status endtime="20160908 16:12:20.129" starttime="20160908 16:12:20.121" status="PASS"></status>
+</kw>
+<status endtime="20160908 16:12:20.130" starttime="20160908 16:12:19.819" status="PASS"></status>
+</kw>
+<kw name="Then I should see a result with the value 4">
+<kw library="Selenium2Library" name="Element Should Contain">
+<doc>Verify the element identified by &lt;b&gt;locator&lt;/b&gt; contains &lt;b&gt;text&lt;/b&gt;.&lt;br&gt;</doc>
+<arguments>
+<arg>result</arg>
+<arg>${value}</arg>
+</arguments>
+<msg level="INFO" timestamp="20160908 16:12:20.201">Element Should Contain: 4 =&gt; OK</msg>
+<status endtime="20160908 16:12:20.203" starttime="20160908 16:12:20.136" status="PASS"></status>
+</kw>
+<status endtime="20160908 16:12:20.204" starttime="20160908 16:12:20.133" status="PASS"></status>
+</kw>
+<kw name="When I add 4">
+<kw library="Selenium2Library" name="Input Text">
+<doc>Types the given &lt;b&gt;text&lt;/b&gt; into the text field identified by</doc>
+<arguments>
+<arg>input</arg>
+<arg>${value}</arg>
+</arguments>
+<msg level="INFO" timestamp="20160908 16:12:20.211">Typing text '4' into text field 'input'</msg>
+<status endtime="20160908 16:12:20.307" starttime="20160908 16:12:20.207" status="PASS"></status>
+</kw>
+<kw library="Selenium2Library" name="Click Button">
+<doc>Click on the button identified by &lt;b&gt;locator&lt;/b&gt;.&lt;br&gt;</doc>
+<arguments>
+<arg>addButton</arg>
+</arguments>
+<msg level="INFO" timestamp="20160908 16:12:20.312">Clicking button 'addButton'.</msg>
+<status endtime="20160908 16:12:20.451" starttime="20160908 16:12:20.308" status="PASS"></status>
+</kw>
+<kw library="FancyLib" name="Is This Fancy">
+<arguments>
+<arg>${value}</arg>
+</arguments>
+<status endtime="20160908 16:12:20.455" starttime="20160908 16:12:20.453" status="PASS"></status>
+</kw>
+<status endtime="20160908 16:12:20.456" starttime="20160908 16:12:20.205" status="PASS"></status>
+</kw>
+<kw name="Then I should see a result with the value 8">
+<kw library="Selenium2Library" name="Element Should Contain">
+<doc>Verify the element identified by &lt;b&gt;locator&lt;/b&gt; contains &lt;b&gt;text&lt;/b&gt;.&lt;br&gt;</doc>
+<arguments>
+<arg>result</arg>
+<arg>${value}</arg>
+</arguments>
+<msg level="INFO" timestamp="20160908 16:12:20.502">Element Should Contain: 8 =&gt; OK</msg>
+<status endtime="20160908 16:12:20.503" starttime="20160908 16:12:20.458" status="PASS"></status>
+</kw>
+<status endtime="20160908 16:12:20.504" starttime="20160908 16:12:20.457" status="PASS"></status>
+</kw>
+<kw type="teardown" library="Selenium2Library" name="Close Browser">
+<doc>Closes the current browser instance.&lt;br&gt;&lt;br&gt;&lt;b&gt;See Also:&lt;/b&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Close All Browsers`&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Open Browser`&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`Switch Browser`&lt;br&gt;</doc>
+<status endtime="20160908 16:12:20.856" starttime="20160908 16:12:20.505" status="PASS"></status>
+</kw>
+<tags>
+<tag>calculate</tag>
+<tag>input</tag>
+<tag>result</tag>
+</tags>
+<status critical="yes" endtime="20160908 16:12:20.857" starttime="20160908 16:12:15.177" status="PASS"></status>
+</test>
+<status endtime="20160908 16:12:20.865" starttime="20160908 16:12:08.528" status="PASS"></status>
+</suite>
+<status endtime="20160908 16:12:20.880" starttime="20160908 16:12:08.514" status="PASS"></status>
+</suite>
+<status endtime="20160908 16:12:20.893" starttime="20160908 16:12:08.280" status="PASS"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0">calculate</stat>
+<stat pass="1" fail="0">header</stat>
+<stat pass="1" fail="0">input</stat>
+<stat pass="1" fail="0">result</stat>
+<stat pass="1" fail="0">title</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" name="Acceptance" id="s1">Acceptance</stat>
+<stat pass="2" fail="0" name="Calculate" id="s1-s1">Acceptance.Calculate</stat>
+<stat pass="2" fail="0" name="calculatePage" id="s1-s1-s1">Acceptance.Calculate.calculatePage</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

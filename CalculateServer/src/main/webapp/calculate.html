@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<script src="js/calculate.js"></script>
+<head>
+    <title>Calculate a value</title>
+</head>
+<body>
+    <h2 class="headers" id="calculateHeader">
+        Calculate a value using operators
+    </h2>
+    Give input as a number:
+    <input type="number" id="input" name="valueCalculate">
+    <button class="buttons" id="addButton" onclick="addValue(document.getElementById('input').value)">
+        add value
+    </button>
+    <br>
+    <br>
+    Result :   <b><span id="result"></span></b>
+    <br>
+    <br>
+    Info message :   <b><span id="infoMessage"></span></b>
+</body>
+</html>
