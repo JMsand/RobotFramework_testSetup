@@ -4,7 +4,7 @@ var result = 0;
 function addValue(given){
 	cleanMessage();
 	const parsed = parseInt(given);
-	isNaN(parsed) ? showException("Given number is not valid") : addNumber(parsed)
+	isNaN(parsed) ? showException("Given value is not a number") : addNumber(parsed)
 	setResultValue();
 }
 
